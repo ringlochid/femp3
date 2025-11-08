@@ -8,27 +8,85 @@
   
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #0f0f0f;
+    }
+    .avatar{
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto;
+      border: 1px solid #bcb91e36;
+    }
+    .card{
+      display: grid;
+      width: min(320px, 90vw); 
+      padding: 24px;
+      border-radius: 20px;
+      background: rgba(41,39,38,.895);
+      box-shadow: 2px 4px 8px rgba(0,0,0,.2);
+      text-align: center;
+    }
+    .name{
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+    }
+    .address{
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: greenyellow;
+    }
+    .intro{
+      font-size: 0.85;
+      font-weight: 400;
+      color: #b3b3b3;
+    }
+    .bar{
+      display: block;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      background-color: lightgray;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+    }
+    .bar:hover { filter: brightness(1.10); }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+      margin: 20px;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
   </style>
 </head>
 <body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="card">
+    <img src="assets/images/avatar-jessica.jpeg" class="avatar" alt="your icon">
+    <p class="name">your name</p>
+    <p class="address">your address</p>
+    <p class="intro">"your intro"</p>
+    <a class="bar" href="https://github.com">GitHub</a>
+    <a class="bar" href="https://www.frontendmentor.io/">Frontend Mentor</a>
+    <a class="bar" href="https://au.linkedin.com">LinkedIn</a>
+    <a class="bar" href="https://x.com">X</a>
+    <a class="bar" href="https://www.instagram.com">Instagram</a>
+    <div class="attribution">
+    Challenge by <a class="attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">loc</a>.
+    </div>
   </div>
+  
 </body>
 </html>
